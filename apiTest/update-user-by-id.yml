@@ -1,0 +1,21 @@
+info:
+  name: update-user-by-id
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: http://localhost:5000/api/users/6a55d80c4fa2156ab70ed412
+  body:
+    type: json
+    data: |-
+      {
+       "name":"tonmoy cranti" 
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
